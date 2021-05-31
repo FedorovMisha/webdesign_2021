@@ -1,3 +1,28 @@
-body{
-    background-color: blue;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color:white;
+}
+
+header{
+    position: relative;
+    /* background: url('../public/beauty-863063_1920\ 1.png'); */
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    justify-content: ara;
+}
+
+header::before{
+    content: '';
+    background: url('../public/beauty-863063_1920\ 1.png');
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    width:100vw;
+    z-index: -1;
 }
