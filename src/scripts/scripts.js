@@ -20,5 +20,3 @@ let setActive = (predicate) => {
     }
 
 }
-
-setActive(false);
