@@ -37,15 +37,33 @@
     color: white;
     background: #6a6a6a;
 }
+
+@media screen and (max-width:1000px) and (min-width:800px) {
+    .label{
+        font-size: 36px;
+        color: #6a6a6a;
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width:1300px) and (min-width:1000px) {
+    .label{
+        font-size: 36px;
+        color: #6a6a6a;
+        margin: 50px 0;
+    }
+}
 @media screen and (max-width:800px){
 
     .item img{
         width: 100%;
     }
+    .item{
+        width: 100%;
+    }
     .label{
         font-size: 36px;
         color: #6a6a6a;
-        margin: 60px 0;
+        margin: 30px 0;
     }
     .btn{
         padding: 18px 43px;

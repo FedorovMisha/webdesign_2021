@@ -49,7 +49,7 @@
 
     padding-top: 50px;
 
-    margin-bottom: 250px;   
+    margin-bottom: 300px;   
     
 }
 .nav img{
@@ -79,21 +79,16 @@
     background: #9C9C8D;
     color: #D4D4D4;
     font-size: 24px;
-    margin-bottom: 350px;
+    margin-bottom: 20vh;
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1300px) and (min-width:1000px){
     .nav{
         margin-bottom: 150px;
     }
-    .arrow__l{
+    .arrow__l, .arrow__r{
         transform: scale(0.5);
-        top: 40%;
-    }
-    
-    .arrow__r{
-        transform: scale(0.5);
-        top: 40%;
+        top: 1fr;
     }
 
     .header__content h2{
@@ -106,7 +101,59 @@
     }
     .header__button{
         padding: 15px 24px;
+        margin-bottom: 50px;
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1110px) and (min-width:1000px){
+    .nav{
+        margin-left: 250px;
+        margin-bottom: 100px;
+        padding-bottom: 0px;
+    }
+    .nav .logo{
+        transform: scale(0.8);
+    }
+
+    .burger__menu img{
+        margin-right: 50px;
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:800px){
+    .nav{
+        margin-left: 250px;
+        margin-bottom: 100px;
+        padding-bottom: 0px;
+    }
+    .nav .logo{
+        transform: scale(0.8);
+    }
+
+    .burger__menu img{
+        margin-right: 50px;
+        transform: scale(0.8);
+    }
+
+    .header__content h2{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .header__content h1{
+        font-size: 38px;
+    }
+    .arrow__l, .arrow__r img{
+        transform: scale(0.5);
+        top: 1fr;
+    }
+    .header__button{
+        padding: 15px 35px;
+    }
+    .header__main__info{
+        margin-bottom: 50px;
     }
 }
 
