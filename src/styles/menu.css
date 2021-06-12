@@ -9,10 +9,12 @@
 }
 
 .not__visiable{
-    display: none;
+    animation-duration: 1s;
+    animation-name: deleaves;
 }
 
 .visiable{
+    transform: translateX(-40000);
     display: block;
     animation-duration: 1s;
     animation-name: leaves;
@@ -60,16 +62,19 @@
 @keyframes leaves {
     0% {
         transform: scale(0);
+    
     }
     100% {
         transform: scale(1);
     }
 }
+
 @keyframes deleaves {
     0% {
         transform: scale(1);
     }
     100% {
-        transform: scale(0);
+        transform:scale(0);
+        transform: translateX(4000px);
     }
 }
