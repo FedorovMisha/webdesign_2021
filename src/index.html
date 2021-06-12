@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/shared.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -19,7 +19,7 @@
         <div class="container container__flex__col">
             <div class="nav">
                 <img src="../public/Images/pix As Pix.png" alt="logo" class="logo">
-                <a href="#" class="burger__menu"><img src="../public/Images/mdi_menu.png" alt=""></a>
+                <a href="#" class="burger__menu" onclick="setActive(true)"><img src="../public/Images/mdi_menu.png" alt=""></a>
             </div>
             <div>
                 <a href="" class="arrow__l"><img src="../public/Images/ic_outline-keyboard-arrow-right-1.png" alt=""></a>
@@ -89,5 +89,17 @@
         </div>
     </footer>
 
+    <div id="menu" class="full__scr not__visiable">
+        <div class="menu__cnt">
+            <div class="menu__items">
+                <a href="#" class="menu__item">Services</a>
+                <a href="#" class="menu__item">Contacts</a>
+                <a href="#" class="menu__item">About as</a>
+                <a href="" class="menu__item" onclick="setActive(false)">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
