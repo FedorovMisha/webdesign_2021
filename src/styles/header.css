@@ -84,7 +84,7 @@
     padding: 15px 24px;
     transition: .2s ease-in-out;
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .header__button:before {
     content: "";
