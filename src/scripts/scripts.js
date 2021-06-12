@@ -20,8 +20,8 @@ let setActive = (predicate) => {
         t = setTimeout(() => { 
             menu.style.opacity='0';
             menu.style.display="none";  
-
         }, 1000);
     }
 
 }
+
