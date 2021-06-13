@@ -1,6 +1,7 @@
 let menu = document.getElementById("menu");
 menu.style.display="none";
 let t = 0;
+
 let setActive = (predicate) => {
     
     if(predicate){

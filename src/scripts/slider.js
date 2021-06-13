@@ -1,7 +1,7 @@
 let sliderArea = document.getElementById("slider__area");
 let timeOutObj = null;
 let block = 0;
-window.isDevelopment = true;
+window.isDevelopment = false;
 
 
 const images = window.isDevelopment ?  [
@@ -49,9 +49,7 @@ const swipeLeft = () => {
         
         if(current < 0)
             current = images.length - 1;
-    
-        
-
+            
         currentImage = images[current];
         console.log(current + " " + currentImage);
         window.requestAnimationFrame(function(time){
