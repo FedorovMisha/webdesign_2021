@@ -1,6 +1,14 @@
-.header__bg{
+header{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.img__wrapper{
     position: absolute;
     z-index: -1000;
+    overflow: hidden;
+    width: 100%;
+}
+.header__bg{
     width: 100%;
 }
 
@@ -28,7 +36,15 @@
     top: 1fr;
     right: 0;
 }
-
+.arrow__r:hover{
+    transform: scale(90%);
+}
+.arrow__l:hover{
+    transform: scale(90%);
+}
+.burger__menu:hover img{
+    transform: scale(1.1);
+}
 .container__flex__col{
     display: flex;
     flex-direction: column;
@@ -80,6 +96,22 @@
     color: #D4D4D4;
     font-size: 24px;
     margin-bottom: 20vh;
+}
+
+.swipe__slide{
+    animation-duration: 1s;
+    animation-name: swipe;
+}
+
+@keyframes swipe {
+    0%{
+        transform: scale(1);
+        overflow-x: hidden;
+    }
+    100%{
+        transform: scale(4);
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (max-width:1300px) and (min-width:1000px){
