@@ -1,6 +1,6 @@
 let sliderArea = document.getElementById("slider__area");
 let timeOutObj = null;
-window.isDevelopment = true;
+window.isDevelopment = false;
 
 const images = window.isDevelopment ?  [
     "../../public/Images/Slider0.png",
@@ -74,6 +74,6 @@ setInterval(() =>{
     {
         swipeRight();
     }
-}, 10000);
+}, 20000);
 
 
