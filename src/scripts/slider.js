@@ -61,6 +61,6 @@ setInterval(() =>{
     {
         swipeRight();
     }
-}, 5000)
+}, 10000);
 
 
