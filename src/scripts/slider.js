@@ -1,11 +1,19 @@
 let sliderArea = document.getElementById("slider__area");
 let timeOutObj = null;
-const images = [
-    "/public/Images/Slider0.png",
-    "/public/Images/Slider1.png",
-    "/public/Images/Slider2.png",
-    "/public/Images/Slider3.png",
-    "/public/Images/Slider4.png",
+window.isDevelopment = false;
+
+const images = window.isDevelopment ?  [
+    "../..//public/Images/Slider0.png",
+    "../..//public/Images/Slider1.png",
+    "../..//public/Images/Slider2.png",
+    "../..//public/Images/Slider4.png",
+    "../..//public/Images/Slider3.png",
+] : [
+    "https://fedorovmisha.github.io/webdesign_2021/public/Images/Slider0.png",
+    "https://fedorovmisha.github.io/webdesign_2021/public/Images/Slider1.png",
+    "https://fedorovmisha.github.io/webdesign_2021/public/Images/Slider2.png",
+    "https://fedorovmisha.github.io/webdesign_2021/public/Images/Slider3.png",
+    "https://fedorovmisha.github.io/webdesign_2021/public/Images/Slider4.png",
 ]
 
 let current = 0;
@@ -13,6 +21,7 @@ let currentImage = images[0];
 let animationName = "swipe__slide";
 
 const swipeRight = () => {
+    console.log(currentImage + " " + window.isDevelopment);
     document.getElementById("slider__area").classList.remove("swipe__slide");
     current = (current + 1) % images.length;
     currentImage = images[current];
