@@ -1,11 +1,11 @@
 let sliderArea = document.getElementById("slider__area");
 let timeOutObj = null;
 const images = [
-    "../../public/Images/Slider0.png",
-    "../../public/Images/Slider1.png",
-    "../../public/Images/Slider2.png",
-    "../../public/Images/Slider3.png",
-    "../../public/Images/Slider4.png",
+    "/public/Images/Slider0.png",
+    "/public/Images/Slider1.png",
+    "/public/Images/Slider2.png",
+    "/public/Images/Slider3.png",
+    "/public/Images/Slider4.png",
 ]
 
 let current = 0;
