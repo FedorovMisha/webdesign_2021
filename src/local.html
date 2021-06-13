@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+</head>
+<body>
+    <header style="overflow-x:hidden;">
+
+        <div class="img__wrapper">
+            <img src="../public/Images/Slider0.png" alt="#" class="header__bg" id="slider__area" />
+        </div>
+
+        <div class="container container__flex__col">
+            <div class="nav">
+                <img src="../public/Images/pix As Pix.png" alt="logo" class="logo" />
+                <a href="#" class="burger__menu" onclick="setActive(true)"><img src="../public/Images/mdi_menu.png"
+                        alt="" /></a>
+            </div>
+            <div>
+                <a href="#" class="arrow__l" id="l_arrow"><img
+                        src="../public/Images/ic_outline-keyboard-arrow-right-1.png" alt="" /></a>
+            </div>
+            <div>
+                <a href="#" class="arrow__r" id="r_arrow"><img
+                        src="../public/Images/ic_outline-keyboard-arrow-right.png" alt="" /></a>
+            </div>
+
+            <div class="header__main__info">
+                <div class="header__content">
+                    <h2 id="content_first">Creating</h2>
+                    <h1 id="content_first">QUALITY photos</h1>
+                </div>
+            </div>
+            <a href="#" class="header__button">Read more</a>
+        </div>
+
+        <div class="header__bg__hidden"></div>
+    </header>
+
+    <div id="menu" class="full__scr not__visiable">
+        <div class="menu__cnt">
+            <div class="menu__items">
+                <a href="#" class="menu__item">Services</a>
+                <a href="#" class="menu__item">Contacts</a>
+                <a href="#" class="menu__item">About as</a>
+                <a href="#" class="menu__item" onclick="setActive(false)">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/slider.js"></script>
+</body>
+</html>

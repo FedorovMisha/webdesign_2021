@@ -8,7 +8,8 @@ let setActive = (predicate) => {
         menu.classList.add("visiable");
         menu.classList.remove("not__visiable");
         menu.style.opacity='1';
-        if(t!=null)
+        menu.style.zIndex = '1000';
+        if(t!= null)
         {
             clearTimeout(t);
             t = null;
@@ -18,8 +19,9 @@ let setActive = (predicate) => {
         menu.classList.remove("visiable");  
         menu.classList.add("not__visiable");
         t = setTimeout(() => { 
-            menu.style.opacity='0';
-            menu.style.display="none";  
+            menu.style.opacity='1';
+            menu.style.display = "none";
+            // menu.style.zIndex = '-1100';  
         }, 900);
     }
 

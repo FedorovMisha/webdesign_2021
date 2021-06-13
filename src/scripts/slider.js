@@ -1,6 +1,8 @@
 let sliderArea = document.getElementById("slider__area");
 let timeOutObj = null;
-window.isDevelopment = false;
+let block = 0;
+window.isDevelopment = true;
+
 
 const images = window.isDevelopment ?  [
     "../../public/Images/Slider0.png",
@@ -21,7 +23,7 @@ let currentImage = images[0];
 let animationName = "swipe__slide";
 
 const swipeRight = () => {
-    if (t === 0) {
+    if (block === 0) {
         console.log(currentImage + " " + window.isDevelopment);
         document.getElementById("slider__area").classList.remove("swipe__slide");
         current = (current + 1) % images.length;
@@ -31,17 +33,17 @@ const swipeRight = () => {
                 document.getElementById("slider__area").classList.add("swipe__slide");
             })
         });
-        t = setTimeout(() => {
+        block = setTimeout(() => {
             sliderArea.src = currentImage;
-            t = 0;
+            block = 0;
         }, 1000);
     }
-
+    
 };
 
 const swipeLeft = () => {
 
-    if (t === 0) {
+    if (block === 0) {
         document.getElementById("slider__area").classList.remove("swipe__slide");
         current = (current - 1) % images.length;
         
@@ -57,9 +59,9 @@ const swipeLeft = () => {
                 document.getElementById("slider__area").classList.add("swipe__slide");
             })
         });
-        t = setTimeout(() => {
+        block = setTimeout(() => {
             sliderArea.src = currentImage;
-            t = 0;
+            block = 0;
         }, 1000);
     }
 };
@@ -70,7 +72,7 @@ document.querySelector("#r_arrow").addEventListener("click", swipeRight, false);
 
 
 setInterval(() =>{
-    if(t == 0)
+    if(block === 0)
     {
         swipeRight();
     }

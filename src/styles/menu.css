@@ -9,6 +9,7 @@
 }
 
 .not__visiable{
+    display: none;
     animation-duration: 1s;
     animation-name: deleaves;
 }
