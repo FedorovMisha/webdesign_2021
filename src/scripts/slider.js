@@ -28,15 +28,16 @@ const swipeRight = () => {
         document.getElementById("slider__area").classList.remove("swipe__slide");
         current = (current + 1) % images.length;
         currentImage = images[current];
+        block = setTimeout(() => {
+            sliderArea.src = currentImage;
+            block = 0;
+        }, 1000);
         window.requestAnimationFrame(function(time){
             window.requestAnimationFrame(function(time){
                 document.getElementById("slider__area").classList.add("swipe__slide");
             })
         });
-        block = setTimeout(() => {
-            sliderArea.src = currentImage;
-            block = 0;
-        }, 1000);
+
     }
     
 };
@@ -52,15 +53,15 @@ const swipeLeft = () => {
             
         currentImage = images[current];
         console.log(current + " " + currentImage);
+        block = setTimeout(() => {
+            sliderArea.src = currentImage;
+            block = 0;
+        }, 1000);
         window.requestAnimationFrame(function(time){
             window.requestAnimationFrame(function(time){
                 document.getElementById("slider__area").classList.add("swipe__slide");
             })
         });
-        block = setTimeout(() => {
-            sliderArea.src = currentImage;
-            block = 0;
-        }, 1000);
     }
 };
 

@@ -1,0 +1,123 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* margin: 0 auto; */
+    margin-bottom: 290px;
+}
+.services__label{
+    margin: 55px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.services__label h1{
+    font-size: 64px;
+    color: #6a6a6a;
+}
+
+.services__label p{
+    font-size: 24px;
+    color: #6a6a6a;
+}
+
+.services__list{
+    display: flex;
+    gap: 144px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service__item{
+    display: inline-block;
+    position: relative;
+    /* flex-basis: 35vw; */
+    width: 40%;
+    
+}
+
+.service__item::before{
+    content: '';
+    background: url('../../public/Images/dslr-5051265_1920\ 1.png');
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.service__item h3{
+    font-size: 24px;
+    text-align: center;
+    padding: 125px 145px;
+    background: rgba(156, 156, 141, 0.71);
+}
+
+@media screen and (max-width:1000px) and (min-width:800px) {
+    .services__label h1{
+        font-size: 44px;
+    }
+    .services__label{
+        margin: 20px 0;
+    }
+    .services__label p{
+        font-size: 16px;
+        width: 80%;
+    }
+    .services{
+        margin-bottom: 100px;
+    }
+    .services__list{
+        gap: 20px;
+    }
+    .service__item{
+        width: 80%;
+    }
+}
+@media screen and (max-width:1300px) and (min-width:1000px) {
+    .services__label h1{
+        font-size: 44px;
+    }
+
+    .services__label p{
+        font-size: 16px;
+        width: 80%;
+    }
+    .services{
+        margin-bottom: 100px;
+    }
+    .services__list{
+        gap: 10px;
+    }
+}
+@media screen and (max-width:800px){
+
+    .services__list{
+        gap: 50px 0;
+    }
+    .services__label{
+        margin: 15px 0;
+    }
+    .services__label h1{
+        font-size: 34px;
+    }
+
+    .services__label p{
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .service__item{
+        width: 80%;
+    }
+
+    .services{
+        margin-bottom: 100px;
+    }
+}
