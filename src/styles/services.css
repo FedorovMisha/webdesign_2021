@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     /* margin: 0 auto; */
     margin-bottom: 290px;
 }
@@ -99,7 +98,10 @@
 @media screen and (max-width:800px){
 
     .services__list{
+        /* gap: 0px 0; */
         gap: 50px 0;
+        /* margin-bottom: ; */
+        margin-bottom: 50px;
     }
     .services__label{
         margin: 15px 0;
@@ -114,10 +116,11 @@
     }
 
     .service__item{
-        width: 80%;
+        width: 80vw;
+        /* margin-bottom: 50px; */
     }
 
     .services{
-        margin-bottom: 100px;
+        margin-bottom: 0px;
     }
 }
