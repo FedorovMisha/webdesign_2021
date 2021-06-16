@@ -36,7 +36,9 @@
     width: 40%;
     
 }
-
+.service__item h3{
+    text-align: center;    
+}
 .service__item::before{
     content: '';
     background: url('../../public/Images/dslr-5051265_1920\ 1.png');
@@ -112,11 +114,11 @@
 
     .services__label p{
         font-size: 12px;
-        width: 90%;
+        width: 90vw;
     }
 
     .service__item{
-        width: 80vw;
+        width: 90vw;
         /* margin-bottom: 50px; */
     }
 
