@@ -111,7 +111,7 @@
 }
 
 
-@media screen and (max-width:100px){
+@media screen and (max-width:1000px){
     .clients__label{
         font-size: 48px;
         margin:30px 0;
