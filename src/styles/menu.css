@@ -55,6 +55,9 @@
 }
 
 @media screen and (max-height:500px){
+    .menu__item{
+        font-size: 24px;
+    }
     .menu__items{
         gap: 20px;
     }
