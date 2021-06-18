@@ -60,6 +60,42 @@
     background: rgba(156, 156, 141, 0.71);
 }
 
+.contacts__block{
+    background: #727272;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 58px 0px;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 36px;
+}
+
+.location{
+    font-size: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.message{
+    font-size: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
 @media screen and (max-width:1000px) and (min-width:800px) {
     .services__label h1{
         font-size: 44px;
@@ -96,6 +132,36 @@
     .services__list{
         gap: 10px;
     }
+
+    .contacts__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts div>img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .phone{
+        /* justify-content: center; */
+        font-size: 18px;
+        /* width: 80%; */
+    }
+    
+    .location{
+        /* justify-content: center; */
+        font-size: 18px;
+        /* width: 80%; */
+    }
+
+    .message{
+        /* justify-content: center; */
+        font-size: 18px;
+        /* width: 80%; */
+    }
+
 }
 @media screen and (max-width:800px){
 
@@ -125,4 +191,34 @@
     .services{
         margin-bottom: 0px;
     }
+    .contacts{
+        gap: 20px 0;
+    }
+    .contacts div>img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contacts__block{
+        justify-content: center;
+    }
+
+    .phone{
+        /* justify-content: center; */
+        font-size: 12px;
+        /* width: 80%; */
+    }
+    
+    .location{
+        /* justify-content: center; */
+        font-size: 12px;
+        /* width: 80%; */
+    }
+
+    .message{
+        /* justify-content: center; */
+        font-size: 12px;
+        /* width: 80%; */
+    }
 }
+

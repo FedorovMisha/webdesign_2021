@@ -107,10 +107,15 @@ header{
 @keyframes swipe {
     0%{
         transform: scale(1);
+        /* transform: rotateZ(0); */
         overflow-x: hidden;
     }
-    100%{
+    90%{
         transform: scale(4);
+        /* transform: rotateZ(360); */
+    }
+    100%{
+        transform: scale(1);
         overflow-x: hidden;
     }
 }
