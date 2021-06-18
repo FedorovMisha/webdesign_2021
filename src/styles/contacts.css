@@ -1,0 +1,202 @@
+.contacts__label{
+    font-size: 64px;
+    padding: 45px 0;
+    color: #6a6a6a;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contacts{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 0px 50px;
+    flex-wrap: wrap;
+    margin-bottom: 160px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.contact h3{
+    color: #6a6a6a;
+    font-size: 24px;
+}
+
+.message__form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:0 50px;
+    margin-bottom: 150px;
+}
+.personal__info__form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px 0;
+}
+
+.personal__info__form input{
+    width: 30vw;
+    border-style: none;
+    font-size: 36px;
+    background: #CBCBCB;
+    padding: 20px 50px;
+}
+.personal__info__form p{
+    color: #6a6a6a;
+    font-size: 24px;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comment textarea{
+    width: 40vw;
+    height: 30vh;
+    border-style: none;
+    resize: none;
+    font-size: 24px;
+    padding: 20px 50px;
+    background: #CBCBCB;
+    margin-bottom: 250px;
+}
+
+.submit__btn{
+    font-size: 24px;
+    border-style: none;
+    background: #9C9C8D;
+    padding: 18px 46px;
+}
+
+@media screen and (max-width:1300px) and (min-width:1000px){
+    .clients__label{
+        font-size: 64px;
+        margin:50px 0;
+    }
+    .comment__text{
+        font-size: 14px;
+    }
+    .carrow_l img{
+        width: 60px;
+        height: 60px;
+    }
+    .carrow_r img{
+        width: 60px;
+        height: 60px;
+    }
+    .comment__arrows{
+        gap:0 10px;
+        padding: 24px 0;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width:800px) {
+    .contacts__label{
+        font-size: 48px;
+        margin:15px 0;
+        padding: 15px 0;
+    }
+    .contacts{
+        margin-bottom: 100px;
+    }
+    .contact img{
+        width: 80px;
+        height: 80px;
+    }
+    .contact h3{
+        font-size: 18px;
+    }
+    .message__form{
+        margin-bottom: 100px;
+    }
+    .personal__info__form{
+        width: 100%;
+        gap: 20px 0;
+        align-items: center;
+    }
+    .personal__info__form input{
+        width: 50%;
+        font-size: 24px;
+        padding: 20px 34px;
+    }
+
+    .personal__info__form p{
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+    .comment textarea{
+        width: 50vw;
+        height: 30vh;
+        font-size: 18px;
+        padding: 10px 30px;
+        background: #CBCBCB;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .contacts__label{
+        font-size: 48px;
+        margin:15px 0;
+        padding: 15px;
+    }
+    .contacts{
+        gap: 50px 0px;
+        margin-bottom: 50px;
+    }
+
+    .contact{
+        /* width: 70%; */
+        gap: 0 10px;
+    }
+    .contact img{
+        width: 60px;
+        height: 60px;
+    }
+    .contact h3{
+        font-size: 16px;
+    }
+    .message__form{
+        gap:0;
+        margin-bottom: 50px;
+    }
+    .personal__info__form{
+        width: 100%;
+        gap: 20px 0;
+        align-items: center;
+    }
+    .personal__info__form input{
+        width: 50%;
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    .personal__info__form p{
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+    .comment textarea{
+        width: 50vw;
+        height: 30vh;
+        font-size: 16px;
+        padding: 10px 30px;
+        background: #CBCBCB;
+        margin-bottom: 50px;
+    }
+    .submit__btn{
+        font-size: 18px;
+    }
+}

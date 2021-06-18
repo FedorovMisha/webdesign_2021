@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,9 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/contacts.css">
 </head>
+
 <body>
     <header style="overflow-x:hidden;">
 
@@ -47,65 +49,47 @@
         <div class="header__bg__hidden"></div>
     </header>
 
-    <main class="services">
-        <div class="services__label">
-            <h1>OUR SERVICES</h1>
-            <p>Make your special day unbelievable! Photo session will store your memories. Forget about any worries and select the <br>
-                service you need.</p>
-        </div>
-
-        <div class="services__list">
-
-            <div class="service__item">
-                <div>
-                    <h3>studio photos</h3>
-                </div>
-            </div>
-
-            <div class="service__item">
-                <div>
-                    <h3>Landscape photos</h3>
-                </div>
-            </div>
-
-            <div class="service__item">
-                <div>
-                    <h3>Life style photos</h3>
-                </div>
-            </div>
-
-            <div class="service__item">
-                <div>
-                    <h3>art photos</h3>
-                </div>
-            </div>
-
-
-        </div>
-    </main>
-
-    <div class="contacts__block">
+    <main>
+        <h1 class="contacts__label">CONTACTS</h1>
         <div class="contacts">
-            <div class="phone">
-                <img src="../public/Images/Group 11.png" alt="">
+            <div class="contact">
+                <img src="../public/Images/phones.png" alt="">
                 <div>
                     <h3>+7 (912)-12-24-73</h3>
                     <h3>+7 (912)-12-24-74</h3>
                 </div>
             </div>
-
-            <div class="location">
-                <img src="../public/Images/Group 13.png" alt="">
-                <h3>London, Baker street, 2/1</h1>
+            <div class="contact">
+                <img src="../public/Images/locations.png" alt="">
+                <div>
+                    <h3>London, Baker street, 2/1</h3>
+                </div>
             </div>
-
-            <div class="message">
-                <img src="../public/Images/Group 12.png" alt="">
-                <h3>pixhelp@gmail.com</h3>
+            <div class="contact">
+                <img src="../public/Images/message.png" alt="">
+                <div>
+                    <h3>pixhelp@gmail.com</h3>
+                </div>
             </div>
-
         </div>
-    </div>
+
+        <form action="" class="message__form">
+
+            <div class="personal__info__form">
+                <input type="text" placeholder="your name" />
+                <input type="email" placeholder="your email" />
+                <input type="text" placeholder="your website" />
+                <input type="text" placeholder="your company" />
+                <p>We will contact you within one business day</p>
+            </div>
+
+            <div class="comment">
+                <textarea name="" id="" placeholder="Your comment"></textarea>
+                <button class="submit__btn" type="submit">Send message</button>
+            </div>
+        </form>
+
+    </main>
 
     <footer>
         <div class="footer__center">
@@ -137,14 +121,13 @@
             </div>
         </div>
     </footer>
-
     <div id="menu" class="full__scr not__visiable">
         <div class="menu__cnt">
             <div class="menu__items">
-                <a href="#" class="menu__item" onclick="setActive(false)">Services</a>
+                <a href="services.html" class="menu__item" onclick="setActive(false)">Services</a>
                 <a href="clients.html" class="menu__item">Our Clients</a>
                 <a href="index.html" class="menu__item">My works</a>
-                <a href="contacts.html" class="menu__item">Contacts</a>
+                <a href="#" class="menu__item" onclick="setActive(false)">Contacts</a>
                 <a href="#" class="menu__item" onclick="setActive(false)">Back</a>
             </div>
         </div>
@@ -153,4 +136,5 @@
     <script src="scripts/scripts.js"></script>
     <script src="scripts/slider.js"></script>
 </body>
+
 </html>
