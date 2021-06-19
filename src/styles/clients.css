@@ -1,0 +1,144 @@
+.clients__label{
+    color: #6a6a6a;
+    font-size: 64px;
+    text-align: center;
+    margin:80px 0;
+}
+
+.cards__collection{
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    gap: 108px;
+    flex-wrap: wrap;
+    margin-bottom: 78px;
+}
+
+.card{
+    border: 1px solid #6A6A6A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    gap: 30px 0;
+    padding: 38px 18px;
+}
+.card__text{
+    text-align: center;
+    color: black;
+}
+
+.comments__block{
+    background: #F6F6F6;
+}
+
+.comments__block__label{
+    color: black;
+    font-size: 24px;
+
+    padding-top: 72px;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+#comments{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:0 74px;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    align-items: flex-start;
+    font-size: 18px;
+    padding: 20px 0;
+}
+.comment__text{
+    color: #6a6a6a;
+}
+
+.client__name{
+    /* width: 100%;
+    text-align: center; */
+    color: #6a6a6a;
+}
+
+.client__name span{
+    color: black;
+}
+
+.comment__arrows{
+    display: flex;
+    gap:0 20px;
+    justify-content: center;
+    padding: 74px 0;
+}
+.carrow_l img{
+    width: 70px;
+    height: 70px;
+}
+.carrow_r img{
+    width: 70px;
+    height: 70px;
+}
+.carrow_l,.carrow_r{
+    background: #9C9C8D;
+}
+
+@media screen and (max-width:1300px) and (min-width:1000px){
+    .clients__label{
+        font-size: 64px;
+        margin:50px 0;
+    }
+    .comment__text{
+        font-size: 14px;
+    }
+    .carrow_l img{
+        width: 60px;
+        height: 60px;
+    }
+    .carrow_r img{
+        width: 60px;
+        height: 60px;
+    }
+    .comment__arrows{
+        gap:0 10px;
+        padding: 24px 0;
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    .clients__label{
+        font-size: 48px;
+        margin:30px 0;
+    }
+    .comment__text{
+        font-size: 14px;
+    }
+    .carrow_l img{
+        width: 40px;
+        height: 40px;
+    }
+    .carrow_r img{
+        width: 40px;
+        height: 40px;
+    }
+    .comment__arrows{
+        gap:0 10px;
+        padding: 24px 0;
+    }
+    .card__text{
+        font-size: 16px;;
+    }
+    .card img{
+        width: 80%;
+        height: 80%;
+    }
+    .card{
+        width: 200px;
+    }
+}

@@ -1,0 +1,260 @@
+header{
+    max-width: 100%;
+    overflow: hidden;
+}
+.img__wrapper{
+    position: absolute;
+    z-index: -1000;
+    overflow: hidden;
+    width: 100%;
+}
+.header__bg{
+    width: 100%;
+}
+
+.header__bg__hidden{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: white;
+    z-index: -999;
+}
+
+.container{
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.arrow__l{
+    position: absolute;
+    top: 1fr;
+    left: 0;
+}
+
+.arrow__r{
+    position: absolute;
+    top: 1fr;
+    right: 0;
+}
+.arrow__r:hover{
+    transform: scale(90%);
+}
+.arrow__l:hover{
+    transform: scale(90%);
+}
+.burger__menu:hover img{
+    transform: scale(1.1);
+}
+.container__flex__col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.header__main__info{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.nav{
+    margin-left: 400px;
+
+    padding-top: 50px;
+
+    margin-bottom: 300px;   
+    
+}
+.nav img{
+    margin-right: 200px;
+}
+
+.header__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    /* margin-bottom: 20vh; */
+}
+
+
+.header__content h2{
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+.header__content h1{
+    font-size: 72px;
+}
+
+.header__button{
+    padding: 25px 64px;
+    background: #9C9C8D;
+    color: #D4D4D4;
+    font-size: 24px;
+    margin-bottom: 20vh;
+}
+
+.swipe__slide{
+    animation-duration: 1s;
+    animation-name: swipe;
+}
+
+@keyframes swipe {
+    0%{
+        transform: scale(1);
+        /* transform: rotateZ(0); */
+        overflow-x: hidden;
+    }
+    90%{
+        transform: scale(4);
+        /* transform: rotateZ(360); */
+    }
+    100%{
+        transform: scale(1);
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width:1300px) and (min-width:1000px){
+    .nav{
+        margin-bottom: 150px;
+    }
+    .arrow__l, .arrow__r{
+        transform: scale(0.5);
+        top: 1fr;
+    }
+
+    .header__content h2{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .header__content h1{
+        font-size: 48px;
+    }
+    .header__button{
+        padding: 15px 24px;
+        margin-bottom: 50px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1110px) and (min-width:1000px){
+    .nav{
+        margin-left: 250px;
+        margin-bottom: 100px;
+        padding-bottom: 0px;
+    }
+    .nav .logo{
+        transform: scale(0.8);
+    }
+
+    .burger__menu img{
+        margin-right: 50px;
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:800px){
+    .nav{
+        margin-left: 250px;
+        margin-bottom: 100px;
+        padding-bottom: 0px;
+    }
+    .nav .logo{
+        transform: scale(0.8);
+    }
+
+    .burger__menu img{
+        margin-right: 50px;
+        transform: scale(0.8);
+    }
+
+    .header__content h2{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .header__content h1{
+        font-size: 38px;
+    }
+    .arrow__l, .arrow__r img{
+        transform: scale(0.5);
+        top: 1fr;
+    }
+    .header__button{
+        padding: 15px 35px;
+    }
+    .header__main__info{
+        margin-bottom: 50px;
+    }
+    .header__button{
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    header{
+        background: rgba(106,106,106, 0.4);
+    }
+    .header__bg{
+        object-fit: cover;
+        height: 50px;        
+    }
+    header {
+        height: 50px;
+    }
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .logo{
+        width: 98px;
+        height: 24px;
+        margin: 0;
+        padding-bottom: 12px;
+    }
+
+    .burger__menu{
+        width: min-content;
+    }
+
+    .burger__menu img{
+        width: 24px;
+        height: 24px;
+        margin: 0;
+        padding: 0;
+    }
+    .arrow__l{
+        display: none;
+    }
+    .arrow__r{
+        display: none;
+    }
+    .header__button{
+        display: none;
+    }
+    .header__content{
+        display: none;
+    }
+    .header__bg__hidden{
+        display: none;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+}
