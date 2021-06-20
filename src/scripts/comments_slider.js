@@ -46,7 +46,7 @@ function setCommentsNonActive(){
 function setCommentsActive(){
     for(let i = 0; i < visiableItems.length;i++)
     {
-        comments[visiableItems[i]].style.display = "block";
+        comments[visiableItems[i]].style.display = "flex";
     }
 }
 

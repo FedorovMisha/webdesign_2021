@@ -2,3 +2,12 @@
     font-family: Bebas Neue;
     src: url('../../public/Fonts/BebasNeue-Regular.ttf');
 }
+
+@font-face{
+    font-family: Roboto;
+    src: url('../../public/Fonts/Roboto-Regular.ttf');
+}
+
+.roboto__font{
+    font-family: Roboto;
+}

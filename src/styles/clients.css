@@ -53,6 +53,7 @@
     flex-direction: column;
     width: 360px;
     align-items: flex-start;
+    justify-content: space-between;
     font-size: 18px;
     padding: 20px 0;
 }

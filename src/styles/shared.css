@@ -6,3 +6,13 @@
     letter-spacing: 0.2rem;
     text-decoration: none;
 }
+
+.shr_gr_btn:hover{
+    background: #6a6a6a;
+    color: white;
+}
+
+.sht_y_btn:hover{
+    background: #9C9C8D;
+    color: white;
+}

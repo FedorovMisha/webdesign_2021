@@ -26,10 +26,11 @@ footer{
 
 .email__input{
     background: #939393;
-    color: #D4D4D4;
+    color: white;
     outline: none;
     border-style: none;
     padding: 25px;
+    font-size: 24px;
     width: 410px;
 }
 .send__btn{
@@ -39,6 +40,10 @@ footer{
     font-size: 24px;
     outline: none;
     border-style: none;
+}
+.send__btn:hover{
+    color: white;
+    background: #9C9C9C;
 }
 
 .footer__form{
