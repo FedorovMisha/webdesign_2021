@@ -93,11 +93,17 @@ header{
 
 .header__button{
     padding: 25px 64px;
-    background: #9C9C8D;
-    color: #D4D4D4;
+    background: #D1C8BC;
+    color: #FFFFFF;
     font-size: 24px;
     margin-bottom: 20vh;
 }
+
+.header__button:hover
+{
+    background: #4D4D51;
+}
+
 
 .swipe__slide{
     animation-duration: 1s;
